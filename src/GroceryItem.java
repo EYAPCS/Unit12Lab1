@@ -6,13 +6,11 @@ import java.util.Random;
 
 public class GroceryItem {
 
+    private static Random rnGenerator = new Random(23);
     private int itemCode;
     private int shelfLife;
 
-    private static Random rnGenerator;
-
     public GroceryItem(int newItemCode) {
-        rnGenerator = new Random( 1234 );
         setRandomShelfLife();
         setItemCode(newItemCode);
     }
